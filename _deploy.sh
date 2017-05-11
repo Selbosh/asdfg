@@ -3,8 +3,6 @@
 git config user.name "David Selby"
 git config user.email "david@selbys.org.uk"
 
-git checkout -b temporary_branch
-
 # Clones the GitHub repository to the /docs/ directory.
 git clone https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git docs
 cd docs
@@ -20,10 +18,5 @@ cp -r ../_book/* ./
 cd ..
 git add docs
 git commit -m "Update the book [ci skip]"
-
-# Reconcile any detached heads
-git checkout master
-git commit -m "Update the book 2 [ci skip]"
-git rebase temporary_branch
 
 git push -q origin master
