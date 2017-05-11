@@ -1,0 +1,10 @@
+# Chapter McChapface
+
+Lorem ipsum dolor sit amet.
+
+\begin{equation}
+E=mc^2
+(\#eq:emc2)
+\end{equation}
+
+As we can see from equation \@ref(eq:emc2), \(E\) is in fact equal to the product of \(m\) and \(c^2\).
