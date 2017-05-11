@@ -2,4 +2,4 @@
 
 [![Build Status](https://travis-ci.org/Selbosh/asdfg.svg?branch=master)](https://travis-ci.org/Selbosh/asdfg)
 
-Trying out different ways to avoid detached heads.
+Making use of [native GitHub Pages support](https://docs.travis-ci.com/user/deployment/pages/).
