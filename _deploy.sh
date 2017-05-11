@@ -1,5 +1,10 @@
 #!/bin/sh
 
+set -e
+
+[ -z "${GITHUB_PAT}" ] && exit 0
+[ "${TRAVIS_BRANCH}" != "master" ] && exit 0
+
 git config user.name "David Selby"
 git config user.email "david@selbys.org.uk"
 
@@ -17,6 +22,10 @@ cp -r ../_book/* ./
 # Commits + pushes everything in /docs/ to GitHub
 cd ..
 git add docs
-git commit -m "Update the book [ci skip]"
+git commit -m "Update the book [ci skip]" || true
+
+# Reattach head?
+git checkout -b temp
+git checkout -B master temp
 
 git push -q origin master
