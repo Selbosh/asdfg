@@ -3,8 +3,6 @@ title: My lovely new book
 author: David Selby
 site: bookdown::bookdown_site
 documentclass: book
-github-repo: Selbosh/travisbook
-url: 'http\://selbydavid.com/travisbook/'
 ---
   
 # Introduction
