@@ -4,7 +4,7 @@ git config user.name "David Selby"
 git config user.email "david@selbys.org.uk"
 
 # Clones the GitHub repository to the /docs/ directory.
-git clone https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git docs
+git clone -b master https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git docs
 cd docs
 
 # Clears out anything already in /docs/
