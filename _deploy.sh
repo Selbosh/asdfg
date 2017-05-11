@@ -1,5 +1,8 @@
 #!/bin/sh
 
+git config --global user.email "david@selbys.org.uk"
+git config --global user.name "David Selby"
+
 # Clones the GitHub repository to the /docs/ directory.
 git clone https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git docs
 cd docs
