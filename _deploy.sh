@@ -15,6 +15,7 @@ git rm -rf *
 cp -r ../_book/* ./
 
 # Commits + pushes everything in /docs/ to GitHub
-git add --all *
+cd ..
+git add docs/
 git commit -m "Update the book"
 git push -q origin master
