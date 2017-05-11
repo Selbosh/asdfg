@@ -18,4 +18,4 @@ cp -r ../_book/* ./
 cd ..
 git add docs
 git commit -m "Update the book [ci skip]"
-git push -q origin master
+git push -qf
