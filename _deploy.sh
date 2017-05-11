@@ -23,6 +23,7 @@ git commit -m "Update the book [ci skip]"
 
 # Reconcile any detached heads
 git checkout master
+git commit -m "Update the book 2 [ci skip]"
 git rebase temporary_branch
 
 git push -q origin master
