@@ -1,7 +1,7 @@
 #!/bin/sh
 
-git config --global user.email "david@selbys.org.uk"
-git config --global user.name "Selbosh"
+git config user.name "David Selby"
+git config user.email "david@selbys.org.uk"
 
 # Clones the GitHub repository to the /docs/ directory.
 git clone https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git docs
@@ -16,6 +16,6 @@ cp -r ../_book/* ./
 
 # Commits + pushes everything in /docs/ to GitHub
 cd ..
-git add docs/
+git add docs
 git commit -m "Update the book [ci skip]"
 git push -q origin master
