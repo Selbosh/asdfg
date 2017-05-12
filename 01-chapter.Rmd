@@ -4,7 +4,7 @@ This chapter has equations in it.
 
 \begin{equation}
 E=mc^2
-(\#eq:emc2)
+(\#eq:emc)
 \end{equation}
 
-As we can see from equation \@ref(eq:emc2), \(E\) is in fact equal to the product of \(m\) and \(c^2\).
+As we can see from equation \@ref(eq:emc), \(E\) is in fact equal to the product of \(m\) and \(c^2\).
